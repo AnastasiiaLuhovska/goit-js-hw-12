@@ -92,3 +92,4 @@ refs.form.addEventListener('submit', handleSubmit)
 
 refs.button.addEventListener('click', loadMorePictures)
 
+refs.loader.classList.add('is-hidden')
