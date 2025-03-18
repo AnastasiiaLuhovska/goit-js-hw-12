@@ -35,10 +35,11 @@ const createCardHtml = ({webformatURL, largeImageURL, tags, likes, views, commen
 
 export const instance = basicLightbox.create(`<span class="loader"></span>`)
 
+export const lightbox = new SimpleLightbox('.link', {captionsData: 'alt'});
 
 export const renderCards = (response)=>{
-  const cardsMarkup = response.data.hits.map(obj => createCardHtml(obj)).join('')
-  refs.gallery.innerHTML = cardsMarkup
-  const lightbox = new SimpleLightbox('.link', {captionsData: 'alt'});
+  const cardsMarkup = response.map(obj => createCardHtml(obj)).join('')
+  refs.gallery.insertAdjacentHTML('beforeend', cardsMarkup)
+
   lightbox.refresh();
 }

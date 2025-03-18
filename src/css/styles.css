@@ -46,7 +46,7 @@ textarea {
   flex-wrap: wrap;
   width: 1128px;
   gap: 21px;
-  margin: 0 auto;
+  margin: 15px auto;
 
 }
 li{
@@ -146,6 +146,14 @@ button{
   gap: 8px;
 }
 
-.hidden{
+
+.load-more{
+  display: block;
+  width: 150px;
+  margin: 0 auto;
+}
+
+
+.is-hidden{
   display: none;
 }
