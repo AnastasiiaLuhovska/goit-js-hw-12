@@ -1,0 +1,151 @@
+@import "izitoast/dist/css/iziToast.min.css";
+@import 'basiclightbox/dist/basicLightbox.min.css';
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #434455;
+  background-color: #FFFFFF;
+  margin: 0;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+textarea {
+  resize: none;
+}
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  width: 1128px;
+  gap: 21px;
+  margin: 0 auto;
+
+}
+li{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: calc((100% - 48px)/3);
+  border: 1px solid #808080;
+}
+.image{
+  width: 100%;
+  object-fit: cover;
+  height: 152px;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+p{
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.numbers{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+input{
+  border-radius: 4px;
+  border: 1px solid #808080;
+  width: 272px;
+  height: 36px;
+
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #808080;
+  padding-left: 16px;
+}
+
+button{
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 91px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  gap: 8px;
+}
+
+.hidden{
+  display: none;
+}
